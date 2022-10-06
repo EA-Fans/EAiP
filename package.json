@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1",
+    "startbootstrap-heroic-features": "^5.0.5"
   }
 }
