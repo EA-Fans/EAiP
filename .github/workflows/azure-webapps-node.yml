@@ -44,9 +44,9 @@ jobs:
 
     - name: npm install, build, and test
       run: |
-        npm install
+      #  npm install
         npm run build --if-present
-        npm run test --if-present
+      #  npm run test --if-present
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
@@ -70,7 +70,7 @@ jobs:
         name: node-app
 
     - name: 'Deploy to Azure WebApp'
-      id: deploy-to-webapp 
+      id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
